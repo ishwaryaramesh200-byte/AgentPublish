@@ -1,0 +1,78 @@
+{
+  "name": "generator-agent",
+  "displayName": "GeneratorAgent",
+  "description": "Custom agent that responds with greetings and follows specific instructions",
+  "version": "1.0.13",
+  "publisher": "Ishwarya",
+  "author": "Ishwarya",
+  "license": "MIT",
+  "bin": {
+    "generatoragent": "bin/cli.js"
+  },
+  "files": [
+    ".github",
+    "bin",
+    "README.md",
+    "Generator_Patterns",
+    "Created_Generators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishwaryaramesh200-byte/AgentPublishTest.git"
+  },
+  "keywords": [
+    "agent",
+    "copilot",
+    "vscode",
+    "vs-code-extension",
+    "ai",
+    "automation"
+  ],
+  "homepage": "https://github.com/ishwaryaramesh200-byte/AgentPublishTest#readme",
+  "bugs": {
+    "url": "https://github.com/ishwaryaramesh200-byte/AgentPublishTest/issues"
+  },
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other",
+    "AI"
+  ],
+  "activationEvents": [
+    "onCommand:my-agent.selectAgent",
+    "onCommand:my-agent.openChatPanel",
+    "onCommand:my-agent.runFromPalette"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "my-agent.selectAgent",
+        "title": "Select Agent (Dropdown)"
+      },
+      {
+        "command": "my-agent.openChatPanel",
+        "title": "Open Agent Chat Panel"
+      },
+      {
+        "command": "my-agent.runFromPalette",
+        "title": "Run Agent from Command Palette"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node bin/install.js",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.2",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
