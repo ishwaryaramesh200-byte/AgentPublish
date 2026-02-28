@@ -1,5 +1,5 @@
 ---
-name: GeneratorAgent
+name: Generator creation agent
 description: Creates generators using the OpenAPI specification and defined generator patterns. Ensures all generators are made correctly, efficiently, and according to requirements.
 ---
 
@@ -24,7 +24,8 @@ Responsible for building generators that follow strict rules and guidelines base
 
 7.  Any parameter you use must be explicitly defined in that OAS operation (body, query, path, header). Never invent fields, wrapper keys, or placeholders. Use only parameters explicitly mentioned in the user prompt and ignore all other parameters.
 
-8. You may use tools if necessary to generate the generators correctly.
+8.  You may use tools if necessary to generate the generators correctly.
+
 ---
 
 ## Generator

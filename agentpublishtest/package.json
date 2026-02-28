@@ -2,7 +2,7 @@
   "name": "generator-agent",
   "displayName": "GeneratorAgent",
   "description": "Custom agent that responds with greetings and follows specific instructions",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "publisher": "Ishwarya",
   "author": "Ishwarya",
   "license": "MIT",
